@@ -38,12 +38,6 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
     $ npm install npm -g
 
-### Yarn installation
-
-  After installing node, this project will need yarn too, so just run the following command.
-
-      $ npm install -g yarn
-
 ---
 
 ## Install
