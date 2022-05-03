@@ -46,8 +46,6 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
     $ cd wordle-react
     $ npm install
 
-## Configure app
-
 ## Running the project
 
     $ npm start
