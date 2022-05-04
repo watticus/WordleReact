@@ -62,7 +62,7 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
 ## Exercises
 
-### 1. Seperate Data from Code
+### 1. Separate Data from Code
 
 This project contains a set of words within the code to be used for the word being guessed. This means that to add/remove/update the words being used a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
 
@@ -82,14 +82,19 @@ Refactor this project to contact the API created in Part 2 and use the word prov
 
 ### 2. End-to-End Test Automation
 
-The value of test automation has been proven many times. However automation requires known and expected outcomes. The randomness of the word to be guessed makes automation difficult. Sometimes to make automation easier a way to test the project needs to be programmically be added. This exercise consists of multiple parts.
+The value of test automation has been proven many times. However, automation requires known and expected outcomes. The randomness of the word to be guessed makes automation difficult. Sometimes to make automation easier a way to test the project needs to be programmatically be added. This exercise consists of multiple parts.
 
 Note: Exercise 1 should be completed first.
 
 #### 2. Part 1
 
-Refactor the project from exercise 1. To accept a URL Query String named test. When the query string test exists the project should use the value of test for the word being guessed. This way test automation can specify a word to be used for testing
+Refactor the project from exercise 1. To accept a URL Query String named test. When the query string test exists, the project should use the value of test for the word being guessed. This way test automation can specify a word to be used for testing
 
 #### 2. Part 2
 
 Using your preferred test automation framework, create end-to-end test automation for the project.
+
+
+#### 3. Containerization
+
+TBA
