@@ -64,7 +64,7 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
 ### 1. Seperate Data from Code
 
-This project contains a set of words within the code. This means that to add/remove/update the list a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
+This project contains a set of words within the code to be used for the word being guessed. This means that to add/remove/update the words being used a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
 
 #### 1. Part 1
 
@@ -77,6 +77,8 @@ Create an API that returns a random word from the file created in step 1. Rememb
 #### 1. Part 3
 
 Refactor this project to contact the API created in Part 2 and use the word provided by the API as the solution to the puzzle.
+
+---
 
 ### 2. End-to-End Test Automation
 
