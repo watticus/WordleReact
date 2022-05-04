@@ -19,8 +19,10 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
   You can install nodejs and npm easily with apt install, just run the following commands.
 
-      $ sudo apt install nodejs
-      $ sudo apt install npm
+```bash
+  $ sudo apt install nodejs
+  $ sudo apt install npm
+```
 
 - #### Other Operating Systems
   
@@ -28,15 +30,19 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 If the installation was successful, you should be able to run the following command.
 
-    $ node --version
-    v18.1.0
+```bash
+  $ node --version
+  v18.1.0
 
-    $ npm --version
-    8.8.0
+  $ npm --version
+  8.8.0
+```
 
 If you need to update `npm`, you can do so using `npm`! Cool right? After running the following command, after running relaunch your command line editor.
 
-    $ npm install npm -g
+```bash
+  $ npm install npm -g
+```
 
 ---
 
@@ -48,4 +54,40 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
 ## Running the project
 
-    $ npm start
+```bash
+  $ npm start
+```
+
+---
+
+## Exercises
+
+### 1. Seperate Data from Code
+
+This project contains a set of words within the code. This means that to add/remove/update the list a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
+
+#### 1. Part 1
+
+Create a file that contains the current word list contained in the project.
+
+#### 1. Part 2
+
+Create an API that returns a random word from the file created in step 1. Remember to create unit tests for your code where possible.
+
+#### 1. Part 3
+
+Refactor this project to contact the API created in Part 2 and use the word provided by the API as the solution to the puzzle.
+
+### 2. End-to-End Test Automation
+
+The value of test automation has been proven many times. However automation requires known and expected outcomes. The randomness of the word to be guessed makes automation difficult. Sometimes to make automation easier a way to test the project needs to be programmically be added. This exercise consists of multiple parts.
+
+Note: Exercise 1 should be completed first.
+
+#### 2. Part 1
+
+Refactor the project from exercise 1. To accept a URL Query String named test. When the query string test exists the project should use the value of test for the word being guessed. This way test automation can specify a word to be used for testing
+
+#### 2. Part 2
+
+Using your preferred test automation framework, create end-to-end test automation for the project.

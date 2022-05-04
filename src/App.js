@@ -1,16 +1,10 @@
 import { useEffect, useState } from "react";
 import Wordle from "./components/Wordle";
-import queryString from 'query-string';
 
 function App() {
   const [word, setWord] = useState(null);
-  const queryParams = queryString.parse(window.location.search);
-  const testWord = queryParams.test;
 
   useEffect(() => {
-    if (testWord) {
-      setWord(testWord);
-    } else {
       const wordList = {words: [
         { id: 0, word: "ninja" },
         { id: 1, word: "shine" },
@@ -43,8 +37,7 @@ function App() {
       ]};
       const randomWord = wordList.words[Math.floor(Math.random() * wordList.words.length)]
       setWord(randomWord.word)
-    };
-  }, [setWord, testWord]);
+  }, [setWord]);
 
   return (
     <div className="App">
