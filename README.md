@@ -82,7 +82,7 @@ Refactor this project to contact the API created in Part 2 and use the word prov
 
 ### 2. End-to-End Test Automation
 
-The value of test automation has been proven many times. However, automation requires known and expected outcomes. The randomness of the word to be guessed makes automation difficult. Sometimes to make automation easier a way to test the project needs to be programmatically be added. This exercise consists of multiple parts.
+The value of test automation has been proven many times. However, automation requires known and expected outcomes. The randomness of the word to be guessed makes automation difficult. Sometimes to make automation easier a way to test the project needs to be programmatically added. This exercise consists of multiple parts.
 
 Note: Exercise 1 should be completed first.
 
