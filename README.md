@@ -94,7 +94,8 @@ Refactor the project from exercise 1. To accept a URL Query String named test. W
 
 Using your preferred test automation framework, create end-to-end test automation for the project.
 
+---
 
-#### 3. Containerization
+### 3. Containerization
 
 TBA
