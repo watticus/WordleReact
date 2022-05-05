@@ -66,15 +66,19 @@ If you need to update `npm`, you can do so using `npm`! Cool right? After runnin
 
 This project contains a set of words within the code to be used for the word being guessed. This means that to add/remove/update the words being used a code file must be edited. This is considered bad practice. If we know data is going to be changed it should be located outside the code so it can be altered without touching code files. This exercise consists of multiple parts.
 
-#### 1. Part 1
+#### Exercise 1: Part 1
 
 Create a file that contains the current word list contained in the project.
 
-#### 1. Part 2
+#### Exercise 1: Part 2
 
 Create an API that returns a random word from the file created in step 1. Remember to create unit tests for your code where possible.
 
-#### 1. Part 3
+#### Exercise 1: Part 3
+
+Refactor the API created in Part 2 to accept a query string. If the query string key is "test" and value is **true** then do not return a random word. Instead return a specific word that can be used for testing.
+
+#### Exercise 1: Part 4
 
 Refactor this project to contact the API created in Part 2 and use the word provided by the API as the solution to the puzzle.
 
@@ -86,11 +90,11 @@ The value of test automation has been proven many times. However, automation req
 
 Note: Exercise 1 should be completed first.
 
-#### 2. Part 1
+#### Exercise 2: Part 1
 
-Refactor the project from exercise 1. To accept a URL Query String named test. When the query string test exists, the project should use the value of test for the word being guessed. This way test automation can specify a word to be used for testing
+Refactor the project from exercise 1 to accept a URL Query String named test. When the query string test exists, the project should use the value of test for the word being guessed. This way test automation can specify a word to be used for testing
 
-#### 2. Part 2
+#### Exercise 2: Part 2
 
 Using your preferred test automation framework, create end-to-end test automation for the project.
 
@@ -98,4 +102,33 @@ Using your preferred test automation framework, create end-to-end test automatio
 
 ### 3. Containerization
 
-TBA
+Developers can create containers without Docker, but the platform makes it easier, simpler, and safer to build, deploy and manage containers. Docker is essentially a toolkit that enables developers to build, deploy, run, update, and stop containers using simple commands and work-saving automation through a single API.
+
+In this exercise lets pretend you have released your wordle project and it's popularity has exploded. It has become so popular that your word randomizing API created in exercise 1 is dropping connections because it cannot handle all the traffic. To solve this issue you need to containerize your API so DevOps can run more than one instance of the API behind a load balancer.
+
+#### Exercise 3: Part 1
+
+Create a Dockerfile for the API created in Exercise 1. Build the docker container and run it. When completed all tests should pass.
+
+#### Exercise 3: Part 2
+
+Docker Compose provides a way to orchestrate multiple containers that work together.
+Build the wordle-react Docker Image. Now that two docker images exist (one for the API and one for wordle) create a docker-compose file that will build and run both.
+
+---
+
+### 4. Enhancing the project
+
+Rarely do we have an opportunity to write code that then does not have to be altered in some way later. New requirements are given or an issue is found. In this case we want to enhance the keypad of the wordle app.
+
+#### Exercise 4: Part 1
+
+Refactor the Keypad to match the layout of the letters on your keyboard.
+
+#### Exercise 4: Part 2
+
+Add the Enter and Backspace keys.
+
+#### Exercise 4: Part 3
+
+Refactor the Keypad to allow a user to click the keys of the keypad and have it work like the user pressed the key on the keyboard.
